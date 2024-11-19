@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:white;">
+    <nav class="navbar">
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flower">Stock</a></li>
+            <li><a href="#joke">Joke</a></li>
+            <li><a href="#quiz2">Quiz</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">☰</div>
+    </nav>
+    <header class="para" id="home">
+        <h2 style="color:orangered;">About POP Music</h2>
+        <p class="matter">Pop music is a genre that emerged in the mid-1950s, characterized by catchy melodies, simple chord progressions, and relatable themes. Common topics include love, heartbreak, and partying, but there are also unconventional themes explored in some songs.
+Catchy Melodies: Pop songs often feature memorable hooks that are easy to sing along to.
+
+Simple Structure: Most pop songs follow a verse-chorus format, making them accessible and easy to remember.
+
+Relatable Themes: Lyrics typically revolve around universal experiences such as love, relationships, and personal struggles.
+
+Production Quality: High production values are essential, often incorporating electronic elements and polished sound.
+
+Danceable Rhythms: Many pop songs are designed to be upbeat and encourage dancing, appealing to a wide audience.</p>
+    </header>
+    <section class="carou" id="POP">
+    <div class="container">
+        <div class="row">
+            <h2 style="color:crimson;">Popular POP Music</h2>
+            <p class="available">
+                "Running Wild" by JIN - This song is topping the iTunes chart.<br>
+                "That's So True" by Gracie Abrams - A viral hit featured on various playlists.<br>
+                **"Die With You: You" by The Kid LAROI - A collaboration that has gained significant traction in recent weeks.<br>
+                "Cruel Summer" by Taylor Swift -  Known for her storytelling and genre-blending, she has transitioned from country to pop and beyond<br>
+                "Calm Down" by Rema & Selena Gomez - A catchy track that blends pop and Afrobeats, appealing to a wide audience.<br>
+                "Flowers" by Miley Cyrus - A powerful anthem about self-love and empowerment.<br>
+              </p>
+        </div>
+    </div>
+</section>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Images/c1.avif" alt="Los Angeles" >
+                        </div>
+                        <div class="item">
+                            <img src="Images/c2.avif" alt="Chicago">
+                        </div>
+                        <div class="item">
+                            <img src="Images/c3.avif" alt="New York" >
+                        </div>
+                        <div class="item">
+                            <img src="Images/c4.avif" alt="New York" >
+                        </div>
+                        <div class="item">
+                            <img src="Images/c5.avif" alt="Chicago">
+                        </div>
+                        <div class="item">
+                            <img src="Images/c6.avif" alt="Chicago">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="joke1">
+                <h2 style="color:orangered;">Get a Random Joke</h2>
+                <button id="fetchJokeBtn">Fetch Joke</button>
+                <div id="joke">Click the button to get a joke!</div>
+            </div>
+    <div id="quiz2">
+        <h2 style="color:crimson">Quiz</h2>
+        <p class="q1">If you are ready to take quiz <a href="Quiz.html">Click Here</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

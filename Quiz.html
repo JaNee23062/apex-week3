@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP Music Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="quizContainer">
+        <h1>Pop Music Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Which artist is known as the "Queen of Pop"?</p>
+                <label><input type="radio" name="q1" value="A"> A) Britney Spears</label><br>
+                <label><input type="radio" name="q1" value="B"> B) Madonna</label><br>
+                <label><input type="radio" name="q1" value="C"> C) Mariah Carey</label><br>
+                <label><input type="radio" name="q1" value="D"> D) Lady Gaga</label>
+            </div>
+            <div class="question">
+                <p>2. What year did Michael Jackson release "Thriller"?</p>
+                <label><input type="radio" name="q2" value="A"> A) 1980</label><br>
+                <label><input type="radio" name="q2" value="B"> B) 1982</label><br>
+                <label><input type="radio" name="q2" value="C"> C) 1984</label><br>
+                <label><input type="radio" name="q2" value="D"> D) 1986</label>
+            </div>
+            <div class="question">
+                <p>3. Which song features the lyrics "Cause the players gonna play, play, play, play, play"?</p>
+                <label><input type="radio" name="q3" value="A"> A) "Shake It Off"</label><br>
+                <label><input type="radio" name="q3" value="B"> B) "Blank Space"</label><br>
+                <label><input type="radio" name="q3" value="C"> C) "Bad Blood"</label><br>
+                <label><input type ="radio" name="q3" value="D"> D) "Style"</label>
+            </div>
+            <div class="question">
+                <p>4. Who sang the hit song "Rolling in the Deep"?</p>
+                <label><input type="radio" name="q4" value="A"> A) Adele</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Beyoncé</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Taylor Swift</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Rihanna</label>
+            </div>
+            <div class="question">
+                <p>5. Which artist had a hit with "Blinding Lights"?</p>
+                <label><input type="radio" name="q5" value="A"> A) Justin Bieber</label><br>
+                <label><input type="radio" name="q5" value="B"> B) The Weeknd</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Post Malone</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Ed Sheeran</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const answers = ["B", "B", "A", "A", "B"];
+            let score = 0;
+            for (let i = 0; i < answers.length; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i + 1}"]:checked`);
+                if (userAnswer && userAnswer.value === answers[i]) {
+                    score++;
+                }
+            }
+            document.getElementById("result").innerText = `You scored ${score} out of ${answers.length}`;
+        }
+    </script>
+</body>
+</html>
